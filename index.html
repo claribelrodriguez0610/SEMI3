@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NI OLVIDO, NI PERDÓN - El arte de los que resisten</title>
+  
+  <!-- Tipografía Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">   
+
+  
+</head>
+<body>
+  <!-- Navegación por Secciones -->
+  <nav aria-label="Navegación principal">
+    <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <button class="nav-btn active" onclick="openSection('inicio', this)">INICIO</button>
+      <button class="nav-btn" onclick="openSection('podcast', this)">PODCAST</button>
+      <button class="nav-btn" onclick="openSection('mural', this)">MURAL</button>
+      <button class="nav-btn" onclick="openSection('archivo', this)">ARCHIVO</button>
+      <button class="nav-btn" onclick="openSection('sobreelproyecto', this)">SOBRE EL PROYECTO</button>
+      <button class="nav-btn" onclick="openSection('contacto', this)">CONTACTO</button>
+    </div>
+  </nav>
+  
+  <!-- Encabezado -->
+  <header>
+    <h1>NI OLVIDO, NI PERDÓN</h1>
+    <p class="slogan">El arte como método de resistencia</p>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PANTALLA DE INICIO -->
+    <section id="inicio" class="section-content active">
+      <div class="card">
+        <h2>Manifiesto del Proyecto</h2>
+        <p>Durante y después de la última dictadura militar argentina en el Nordeste Argentino, la creación artística se convirtió en un refugio capaz de preservar la identidad, la memoria y la esperanza frente al cautiverio y la censura.</p>
+      </div>
+
+      <h2>Rutas del Ecosistema</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Podcast</h3>
+          <p>Relatos y testimonios sonoros en primera persona.</p>
+          <button class="btn-route" onclick="openSection('podcast')">Ir a Podcast</button>
+        </div>
+        <div class="card">
+          <h3>Mural</h3>
+          <p>Registro visual del proceso de obra colectiva y ubicación.</p>
+          <button class="btn-route" onclick="openSection('mural')">Ir al Mural</button>
+        </div>
+        <div class="card">
+          <h3>Archivo</h3>
+          <p>Colección de documentos, fotografías y expresiones artísticas.</p>
+          <button class="btn-route" onclick="openSection('archivo')">Ir al Archivo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PODCAST -->
+    <section id="podcast" class="section-content">
+      <h2>Podcast</h2>
+      <article class="card">
+        <h3>Episodio 1: Introducción y Contexto Historográfico</h3>
+        <p>Presentación del proyecto, análisis del contexto histórico en el NEA y la pregunta sobre la preservación de la memoria.</p>
+        <div class="media-container" aria-label="Reproductor de audio para el Episodio 1">
+          <p>[ Reproductor de Audio Integrado / Spotify / YouTube ]</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Episodio 2: Testimonio y Entrevista</h3>
+        <p>Entrevista sobre la vivencia del arte en el cautiverio, la resistencia cultural y el valor de los espacios de memoria.</p>
+        <div class="media-container" aria-label="Reproductor de audio para el Episodio 2">
+          <p>[ Reproductor de Audio Integrado / Spotify / YouTube ]</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECCIÓN MURAL -->
+    <section id="mural" class="section-content">
+      <h2>Mural</h2>
+      <div class="card">
+        <h3>Registro Visual y Galería</h3>
+        <p>Fotografías y material del desarrollo del mural colaborativo realizado con la técnica de esgrafiado.</p>
+      </div>
+      <div class="card">
+        <h3>Ubicación Geográfica y Proceso</h3>
+        <p>Detalles del espacio asignado y las etapas de construcción junto a los colectivos de artistas locales.</p>
+      </div>
+      <!-- Contenedor del Mapa Interactivo -->
+    <div class="map-container">
+      <!-- PEGÁ ACÁ EL IFRAME QUE COPIASTE DE GOOGLE MAPS -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.1246502846764!2d-58.98183737766816!3d-27.46860204263146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf23f83176b%3A0x63a71e4d45bab878!2sFacultad%20de%20Artes%2C%20Dise%C3%B1o%20y%20Ciencias%20de%20la%20Cultura%20(FADyCC%20-%20UNNE))!5e1!3m2!1ses!2sar!4v1791412723672!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    </div>
+      <div class="card">
+        <h3>Entrevista a los Artistas Realizadores</h3>
+        <p>Testimonios de los artistas sobre las formas figurativas, la incorporación del relieve y la experiencia de trabajo en el mural.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN ARCHIVO -->
+    <section id="archivo" class="section-content">
+      <h2>Archivo</h2>
+      <div class="card">
+        <h3>Imágenes de Archivo e Instalaciones</h3>
+        <p>Registro fotográfico documental de las evidencias e instalaciones de la Casa por la Memoria con sus respectivas descripciones y audiodescripciones adaptadas.</p>
+      </div>
+      <div class="card">
+        <h3>Manifestaciones en Contexto de Encierro</h3>
+        <p>Colección de dibujos, escritos y producciones artísticas gestadas por ex-presos políticos como mecanismo de supervivencia e identidad.</p>
+      </div>
+    </section>
+    
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section-content">
+      <h2>Contacto</h2>
+      <div class="card">
+        <h2>Envianos tu comentario o consulta</h2>
+        <form onsubmit="alert('Comentario enviado. ¡Gracias por participar!'); return false;">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required aria-required="true">
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" required aria-required="true">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" rows="4" required aria-required="true"></textarea>
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE EL PROYECTO -->
+    <section id="sobreelproyecto" class="section-content">
+      <h2>Sobre el proyecto</h2>
+      <div class="card">
+        <p>Durante y después de la última dictadura militar argentina marcada por la violencia y la represión, un grupo de presos políticos encuentra en el arte una forma de resistencia y supervivencia. Entre el encierro, el miedo y la censura, la creación artística se convierte en un refugio capaz de preservar la identidad, la memoria y la esperanza. A través de dibujos, música, poesía y otras expresiones, los prisioneros logran mitigar el impacto de la opresión y sostener su humanidad frente a un sistema que busca quebrarlos. Este proyecto explora cómo el arte puede transformarse en un acto de lucha silenciosa y en una herramienta vital para resistir la deshumanización.</p>
+      </div>
+      <div class="card">
+        <h2>Información Institucional y Equipo</h2>
+        <p>Proyecto transmedia enmarcado en la memoria, los derechos humanos y la expresión cultural del NEA.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p><strong>Contacto:</strong> contacto@niolvidoniperdon.org</p>
+    <p>&copy; 2026 NI OLVIDO, NI PERDÓN - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Lógica JavaScript -->
+  <script>
+    // 1. Función base para la navegación entre secciones
+    function openSection(sectionId, element) {
+      const sections = document.querySelectorAll('.section-content');
+      sections.forEach(sec => sec.classList.remove('active'));
+
+      const navButtons = document.querySelectorAll('.nav-btn');
+      navButtons.forEach(btn => btn.classList.remove('active'));
+
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      // Activa el botón en el nav
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const targetBtn = Array.from(navButtons).find(btn => 
+          btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(sectionId)
+        );
+        if (targetBtn) targetBtn.classList.add('active');
+      }
+
+      // Cierra el menú hamburguesa al navegar en celulares
+      const navLinks = document.getElementById('navLinks');
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      if (navLinks && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        hamburgerBtn.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 2. Función para desplegar/contraer el menú hamburguesa
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const isOpen = navLinks.classList.toggle('open');
+      
+      hamburgerBtn.classList.toggle('active');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    }
+  </script>
+</body>
+</html>
